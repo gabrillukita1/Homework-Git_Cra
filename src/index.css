@@ -20,21 +20,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.btn {
-  display: flex;
-  height: 3em;
-  width: 100px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 3px;
-  letter-spacing: 1px;
-  transition: all 0.2s linear;
-  cursor: pointer;
-  border: none;
-  background-color: #fff;
-}
-
-.btn:hover {
-  opacity: 1;
-}

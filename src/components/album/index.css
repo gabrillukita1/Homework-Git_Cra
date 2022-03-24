@@ -1,0 +1,56 @@
+.shortCard {
+    width: auto;
+    height: 300px;
+    padding: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    margin-bottom: 64px;
+}
+
+.shortCard-image {
+    float: left;
+}
+
+.shortCard-image img {
+    border-radius: 3px;
+    margin-right: 96px;
+}
+
+.shortCard-desc {
+    position: relative;
+    margin-top: 56px;
+    width: 1000px;
+    height: 184px;
+}
+
+.shortCard-desc h2 {
+    font-size: 32px;
+    margin: 0 auto;
+}
+
+.shortCard-desc h4 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 8px 0 32px 0;
+}
+
+.shortCard-desc p {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 8px;
+}
+
+.btn-select {
+    position: inline-block;
+    display: block;
+    background-color: white;
+    margin-top: 18px;
+}
+
+.btn-select:hover {
+    background-color: #159260;
+    box-shadow: 0px 8px 24px rgba(46, 229, 157, 0.2);
+    color: #fff;
+    transform: translateY(-7px);
+}
