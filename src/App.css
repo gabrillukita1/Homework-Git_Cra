@@ -5,6 +5,7 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 3px;
+    margin-bottom: 64px;
 }
 
 .shortCard-image {
@@ -13,12 +14,14 @@
 
 .shortCard-image img {
     border-radius: 3px;
+    margin-right: 96px;
 }
 
 .shortCard-desc {
-    float: right;
-    margin: 64px auto;
-    width: 560px;
+    position: relative;
+    margin-top: 56px;
+    width: 1000px;
+    height: 184px;
 }
 
 .shortCard-desc h2 {
@@ -39,14 +42,14 @@
 }
 
 .btn-select {
+    position: inline-block;
     display: block;
     background-color: white;
-    margin: 320px auto;
+    margin-top: 18px;
 }
 
 .btn-select:hover {
-    background-color: #2EE59D;
-    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    background-color: #159260;
     box-shadow: 0px 8px 24px rgba(46, 229, 157, 0.2);
     color: #fff;
     transform: translateY(-7px);
