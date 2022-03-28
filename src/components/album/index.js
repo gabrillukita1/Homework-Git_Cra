@@ -13,11 +13,11 @@ const AlbumItems = ({ album, artists }) => {
     );
 };
 
-// Album Wripper
+// Album Wrapper
 const Album = ({ musics }) => {
     return (
         <div className="album-wrapper">
-            {musics.map(({ id, album, artists}) => (
+            {musics.map(({ id, album, artists }) => (
                 <AlbumItems key={id} album={album} artists={artists} />
             ))}
         </div>
