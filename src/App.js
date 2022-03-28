@@ -1,9 +1,9 @@
 import './App.css';
-import singleData from './assets/data/single';
+import data from './assets/data/single';
 import ShortcardAlbum from './components/album';
 
 function App() {
-    const { album, artists } = singleData;
+    const { album, artists } = data;
     
     return ( 
         <main>
