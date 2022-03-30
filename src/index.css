@@ -3,9 +3,7 @@ body{
   padding: 0px;
   width: 100vw;
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ 
   background: rgb(0,0,0);
   background: linear-gradient(0deg, 
     rgba(0, 0, 0, 1) 50%, 
