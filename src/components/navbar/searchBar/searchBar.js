@@ -1,48 +1,37 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "./searchBar.css";
 
-class SearchBar extends Component {
-  constructor(props) {
-    super(props)
+const SearchBar = ({token, onChange}) => {
+    const [ search, setSearch ] = useState("");
 
-    this.state = {
-      search: "",
+    const handleOnChange = (event) => {
+        setSearch(event.target.value);
     }
-  }
 
-  handleOnChange = (event) => {
-    this.setState({
-      search: event.target.value
-    })
-  }
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        const response = await fetch(`https://api.spotify.com/v1/search?q=${search}?&type=track`,
+            {
+                method: "GET",
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            })
 
-  handleSubmit = async (event) => {
-    event.preventDefault();
-    const response = await fetch(`https://api.spotify.com/v1/search?q=${this.state.search}?&type=track`,
-      {
-        method:"GET",
-        headers: {
-          Authorization: `Bearer ${this.props.token}`
-        }
-      })
-
-    const data = await response.json()
-    console.log(data)
-    this.props.onChange(data.tracks.items)
-  }
-
-  render() {
-    return (
-      <div className="search-bar">
-        <form action="" class="search-bar" onSubmit={this.handleSubmit}>
-          <input type="search" name="search" required onChange={this.handleOnChange}/>
-          <button class="search-btn" type="submit">
-            <span>Search</span>
-          </button>
-        </form>
-      </div>
-    )
-  }
+        const data = await response.json()
+        console.log(data)
+        onChange(data.tracks.items)
+    }
+        return (
+            <div className="search-bar">
+              <form action="" class="search-bar" onSubmit={handleSubmit}>
+                <input type="search" name="search" required onChange={handleOnChange}/>
+                <button class="search-btn" type="submit">
+                  <span>Search</span>
+                </button>
+              </form>
+            </div>
+          )
 }
 
-export default SearchBar;
+    export default SearchBar;

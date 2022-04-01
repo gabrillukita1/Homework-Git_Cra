@@ -55,3 +55,6 @@
     transform: translateY(-7px);
 }
 
+.album-wrapper {
+    padding: 0 64px;
+}
