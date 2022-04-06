@@ -10,6 +10,11 @@ const FormPlaylist = ({
 }) => {
     const [form, setForm] = useState(defaultValue);
 
+    const handleOnChange = (event) => {
+        const { name, value } = event.target;
+        setForm((prev) => ({...prev, [name]: value}));
+    }
+
     // Remove event default and callback to onSubmit
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -22,12 +27,27 @@ const FormPlaylist = ({
                 <div class="title">Playlist</div>
                 <div class="subtitle">Let's create your playlist!</div>
                 <div class="input-container ic1">
-                    <input id="playlist-name" class="input" type="text" minLength={10} placeholder=" " />
+                    <input 
+                        id="playlist-name"
+                        name="name"
+                        onChange={handleOnChange}
+                        class="input" 
+                        type="text" 
+                        minLength={10} 
+                        placeholder=" " 
+                    />
                     <div class="cut"></div>
                     <label for="playlist-name" class="placeholder">Your playlist name..</label>
                 </div>
                 <div class="input-container ic2">
-                    <input id="description" class="input" type="text" placeholder=" " />
+                    <input 
+                        id="description" 
+                        name="description"
+                        onChange={handleOnChange}
+                        class="input" 
+                        type="text" 
+                        placeholder=" " 
+                    />
                     <div class="cut"></div>
                     <label for="description" class="placeholder">Description..</label>
                 </div>
