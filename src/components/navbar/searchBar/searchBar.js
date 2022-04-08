@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import "./searchBar.css";
 
-const SearchBar = ({token, onChange}) => {
+const SearchBar = ({onChange}) => {
     const [ search, setSearch ] = useState("");
-
+    const accessToken = useSelector((state) => state.global.accessToken)
+    console.log("token", accessToken)
     const handleOnChange = (event) => {
         setSearch(event.target.value);
     }
@@ -14,7 +16,7 @@ const SearchBar = ({token, onChange}) => {
             {
                 method: "GET",
                 headers: {
-                    Authorization: `Bearer ${token}`
+                    Authorization: `Bearer ${accessToken}`
                 }
             })
 

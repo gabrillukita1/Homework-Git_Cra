@@ -70,7 +70,7 @@ const App = () => {
         <div>
             <Login />
             <FormPlaylist onSubmit={createPlaylist} />
-            <SearchBar token={ accessToken } onChange={(value) => setMusics(value)} />
+            <SearchBar onChange={(value) => setMusics(value)} />
             <ShortcardAlbum musics={ musics } selected={ selected } setSelected={ setSelected } />
         </div>
     ) 
