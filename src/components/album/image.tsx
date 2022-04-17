@@ -1,7 +1,16 @@
 import React from "react";
 import './album.css';
+interface ImageProps {
+    album:
+    {
+        images: {
+            width: number;
+            url: string
+        }[]
+    }
+}
 
-const Image = ({ album }) => {
+const Image = ({ album }:ImageProps) => {
     return (
         <picture className='shortCard-image'>
             <source
