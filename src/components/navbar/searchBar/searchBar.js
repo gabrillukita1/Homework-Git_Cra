@@ -27,7 +27,7 @@ const SearchBar = ({onChange}) => {
         return (
             <div className="search-bar">
               <form action="" class="search-bar" onSubmit={handleSubmit}>
-                <input type="search" name="search" required onChange={handleOnChange} placeholder="Search..." />
+                <input type="search" required onChange={handleOnChange} placeholder="Search..." />
                 <button class="search-btn" type="submit">
                   <span>Search</span>
                 </button>

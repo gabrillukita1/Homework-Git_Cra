@@ -1,16 +1,32 @@
 .login {   
     margin: auto;
-    margin-right: 32px;
-    padding: 10px 18px;
-    justify-content: flex-end;
-    display: flex;
     width: max-content;
+    height: max-content;
     border-radius: 8px;
-    border: 1.3px solid rgba(213, 199, 241, 0.2);
-    background-color: rgba(224, 218, 236, 0.2);
+    margin-top: 24px;
+    box-shadow: rgba(100, 20, 240, 0.24) 0px 3px 8px;
 }
 
 .login a {
     color: #fff;
     text-decoration: none;
+}
+
+.container {
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    width: 365px;
+    border-radius: 16px;
+    margin: 0 auto;
+    margin-top: 3px;
+}
+
+h1 {
+    margin-top: 3px;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: white;
 }

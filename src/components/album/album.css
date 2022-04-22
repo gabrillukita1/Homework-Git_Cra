@@ -15,7 +15,7 @@
     align-items: center;
     width: 50%;
     height: auto;
-    padding: 32px;
+    padding: 24px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 6px;
@@ -29,6 +29,7 @@
 .shortCard-image img {
     border-radius: 3px;
     margin-right: 96px;
+    width: 312px;
 }
 
 .shortCard-desc {
@@ -50,6 +51,7 @@
 }
 
 .shortCard-desc p {
+    margin-top: -8px;
     font-size: 16px;
     font-weight: lighter;
     margin-bottom: 8px;
@@ -61,7 +63,7 @@
     background-color: #159260;
     color: #fff;
     opacity: 0.7;
-    margin-top: 8px;
+    margin-top: -8px;
     padding: 0 16px;
     justify-content: center;
 }

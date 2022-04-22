@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./login.css";
 import Button from '@mui/material/Button';
+import Logo from '../../../assets/image/Logo.jpg';
 
 class Login extends Component {
     loginUrl = () => {
@@ -18,12 +19,15 @@ class Login extends Component {
     }
 
     render() {
-        // console.log(process.env.REACT_APP_SPOTIFY_CLIENT_ID)
         return (
-            <div className="login">
-                <Button variant="contained" href={this.loginUrl()}>
-                    Login
-                </Button>
+            <div className="container">
+                <img src={Logo} alt="logo" />
+                <h1>Playpedia</h1>
+                <div className="login">
+                    <Button variant="contained" href={this.loginUrl()}>
+                        Login
+                    </Button>
+                </div>
             </div>
         )
     }

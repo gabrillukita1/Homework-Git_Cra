@@ -25,7 +25,7 @@ const Image = ({ album }:ImageProps) => {
                 media={`(min-width: ${album.images[2].width})`}
                 srcSet={album.images[2].url}
             />
-            <img src={album.images[1].url} alt='' />
+            <img src={album.images[0].url} alt='' />
         </picture>
     );
 };

@@ -51,7 +51,7 @@ const FormPlaylist = ({
                     <div class="cut"></div>
                     <label for="description" class="placeholder">Description..</label>
                 </div>
-                <button type="text" class="submit">submit</button>
+                <button type="text" class="submit">Submit</button>
             </div>
         </form>
     );

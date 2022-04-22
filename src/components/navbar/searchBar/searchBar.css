@@ -128,3 +128,11 @@ input {
 .search-bar input:valid + .search-btn:active {
 	transform: translateY(1px);
 }
+
+.search-bar ::placeholder {
+	opacity: 0;
+}
+
+.search-bar input:focus::placeholder {
+	opacity: 1;
+}
